@@ -1,0 +1,44 @@
+# Python environments and generated files
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Local runtime, downloaded caches, and duplicate distribution builds
+.runtime/
+.cache/
+f1_cache/
+jolpica-cache/
+.implementation/
+/deploy/sharing_package/
+node_modules/
+*.log
+
+# Local credentials and private settings
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Databases are populated from the included source data at startup
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+
+# Editor and operating system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini

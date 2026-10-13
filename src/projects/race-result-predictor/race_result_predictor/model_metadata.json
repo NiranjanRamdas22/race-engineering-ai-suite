@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "mode": "historical",
+  "source": "Jolpica F1",
+  "source_url": "https://api.jolpi.ca/ergast/f1/",
+  "trained_at": "2026-10-12T12:26:46.216726+00:00",
+  "training_seasons": [
+    2018,
+    2023
+  ],
+  "selection_season": 2024,
+  "selection_rounds": 12,
+  "calibration_rounds": 12,
+  "test_season": 2025,
+  "data_cutoff": "2025-12-07",
+  "training_rows": 2500,
+  "features": [
+    "position_qual",
+    "driver_rolling_perf",
+    "team_rolling_perf"
+  ],
+  "feature_definitions": {
+    "position_qual": "Qualifying rank; missing qualifying falls back to grid, or 20 for no grid",
+    "driver_rolling_perf": "Mean classified finish in previous five completed races; 10.5 cold start",
+    "team_rolling_perf": "Mean of both classified teammate finishes per race, then previous five completed team races; 10.5 cold start"
+  },
+  "target": "Classified finishing position, including retired drivers; not elapsed race time",
+  "model": "Gradient Boosting, 100 estimators, depth 2; Platt probability calibration on latter 2024 races",
+  "evaluation_2025": {
+    "mae": 3.387539952523444,
+    "brier_score": 0.17432136136971296,
+    "rows": 479,
+    "races": 24
+  },
+  "qualifying_order_baseline": {
+    "mae": 3.338204592901879
+  },
+  "simple_probability_baseline": {
+    "brier_score": 0.16760116035760275,
+    "qualifying_bins": {
+      "0": 0.8528,
+      "1": 0.6384,
+      "2": 0.37859424920127793,
+      "3": 0.12980769230769232
+    }
+  },
+  "limitations": [
+    "Historical backtest; no proof of future predictive accuracy",
+    "No weather, incidents, pit strategy or circuit features in ML",
+    "Missing qualifying uses a labelled grid fallback",
+    "No model selection on held-out 2025 results"
+  ]
+}

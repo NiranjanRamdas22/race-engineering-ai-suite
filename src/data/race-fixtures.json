@@ -1,0 +1,366 @@
+{
+  "silverstone_2024": {
+    "race_id": "silverstone_2024",
+    "name": "2024 British Grand Prix",
+    "circuit": "Silverstone Circuit",
+    "country": "United Kingdom",
+    "date": "2024-07-07",
+    "laps": 52,
+    "winner": {
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "grid": 2
+    },
+    "podium": [
+      {
+        "pos": 1,
+        "driver": "Lewis Hamilton",
+        "team": "Mercedes",
+        "grid": 2,
+        "points": 25.0,
+        "gap": "WINNER"
+      },
+      {
+        "pos": 2,
+        "driver": "Max Verstappen",
+        "team": "Red Bull Racing",
+        "grid": 4,
+        "points": 18.0,
+        "gap": "+00:00:01.465000"
+      },
+      {
+        "pos": 3,
+        "driver": "Lando Norris",
+        "team": "McLaren",
+        "grid": 3,
+        "points": 15.0,
+        "gap": "+00:00:07.547000"
+      }
+    ],
+    "strategy_stints": [
+      {
+        "driver": "Lewis Hamilton",
+        "stints": [
+          "MEDIUM (laps 1–27)",
+          "INTERMEDIATE (laps 28–38)",
+          "SOFT (laps 39–52)"
+        ]
+      },
+      {
+        "driver": "Max Verstappen",
+        "stints": [
+          "MEDIUM (laps 1–26)",
+          "INTERMEDIATE (laps 27–38)",
+          "HARD (laps 39–52)"
+        ]
+      },
+      {
+        "driver": "Lando Norris",
+        "stints": [
+          "MEDIUM (laps 1–27)",
+          "INTERMEDIATE (laps 28–39)",
+          "SOFT (laps 40–52)"
+        ]
+      }
+    ],
+    "key_timeline": [
+      {
+        "lap": 1,
+        "type": "START",
+        "driver": "George Russell",
+        "title": "Russell leads the start",
+        "description": "Russell led Hamilton at the start.",
+        "source_url": "https://api.fia.com/news/f1-hamilton-takes-emotional-record-breaking-ninth-win-silverstone-ahead-verstappen-and-norris"
+      },
+      {
+        "lap": 27,
+        "type": "PIT_STOP",
+        "driver": "Max Verstappen",
+        "title": "Intermediate change",
+        "description": "Verstappen changed to intermediate tyres.",
+        "source_url": "https://api.fia.com/news/f1-hamilton-takes-emotional-record-breaking-ninth-win-silverstone-ahead-verstappen-and-norris"
+      },
+      {
+        "lap": 34,
+        "type": "RETIREMENT_INHERITANCE",
+        "driver": "George Russell",
+        "title": "Russell retires",
+        "description": "Russell retired; the remaining cars moved up the classification.",
+        "source_url": "https://api.fia.com/news/f1-hamilton-takes-emotional-record-breaking-ninth-win-silverstone-ahead-verstappen-and-norris"
+      },
+      {
+        "lap": 39,
+        "type": "PIT_CYCLE_GAIN",
+        "driver": "Lewis Hamilton",
+        "title": "Slick-tyre lead change",
+        "description": "Hamilton moved ahead of Norris through the final pit cycle.",
+        "source_url": "https://api.fia.com/news/f1-hamilton-takes-emotional-record-breaking-ninth-win-silverstone-ahead-verstappen-and-norris"
+      },
+      {
+        "lap": 48,
+        "type": "ON_TRACK_OVERTAKE",
+        "driver": "Max Verstappen",
+        "title": "Verstappen passes Norris",
+        "description": "Verstappen passed Norris for second.",
+        "source_url": "https://api.fia.com/news/f1-hamilton-takes-emotional-record-breaking-ninth-win-silverstone-ahead-verstappen-and-norris"
+      },
+      {
+        "lap": 52,
+        "type": "FINISH",
+        "driver": "Lewis Hamilton",
+        "title": "Hamilton wins",
+        "description": "Hamilton finished ahead of Verstappen and Norris.",
+        "source_url": "https://api.fia.com/news/f1-hamilton-takes-emotional-record-breaking-ninth-win-silverstone-ahead-verstappen-and-norris"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FIA race report",
+        "url": "https://api.fia.com/news/f1-hamilton-takes-emotional-record-breaking-ninth-win-silverstone-ahead-verstappen-and-norris",
+        "scope": "Podium and concise selected race-event annotations, paraphrased; not an exhaustive timeline"
+      },
+      {
+        "label": "FastF1 session timing",
+        "url": "https://docs.fastf1.dev/",
+        "scope": "Official timing feed via FastF1: classified podium, grid and lap/stint grouping; retrieved 2026-10-12"
+      }
+    ],
+    "incomplete": true
+  },
+  "monza_2024": {
+    "race_id": "monza_2024",
+    "name": "2024 Italian Grand Prix",
+    "circuit": "Autodromo Nazionale Monza",
+    "country": "Italy",
+    "date": "2024-09-01",
+    "laps": 53,
+    "winner": {
+      "driver": "Charles Leclerc",
+      "team": "Ferrari",
+      "grid": 4
+    },
+    "podium": [
+      {
+        "pos": 1,
+        "driver": "Charles Leclerc",
+        "team": "Ferrari",
+        "grid": 4,
+        "points": 25.0,
+        "gap": "WINNER"
+      },
+      {
+        "pos": 2,
+        "driver": "Oscar Piastri",
+        "team": "McLaren",
+        "grid": 2,
+        "points": 18.0,
+        "gap": "+00:00:02.664000"
+      },
+      {
+        "pos": 3,
+        "driver": "Lando Norris",
+        "team": "McLaren",
+        "grid": 1,
+        "points": 16.0,
+        "gap": "+00:00:06.153000"
+      }
+    ],
+    "strategy_stints": [
+      {
+        "driver": "Charles Leclerc",
+        "stints": [
+          "MEDIUM (laps 1–15)",
+          "HARD (laps 16–53)"
+        ]
+      },
+      {
+        "driver": "Oscar Piastri",
+        "stints": [
+          "MEDIUM (laps 1–16)",
+          "HARD (laps 17–38)",
+          "HARD (laps 39–53)"
+        ]
+      },
+      {
+        "driver": "Lando Norris",
+        "stints": [
+          "MEDIUM (laps 1–14)",
+          "HARD (laps 15–32)",
+          "HARD (laps 33–53)"
+        ]
+      }
+    ],
+    "key_timeline": [
+      {
+        "lap": 1,
+        "type": "ON_TRACK_OVERTAKE",
+        "driver": "Oscar Piastri",
+        "title": "Piastri passes Norris",
+        "description": "Piastri took the lead at the second chicane.",
+        "source_url": "https://www.fia.com/news/f1-leclerc-wins-ahead-mclaren-duo-ferraris-one-stop-monza-gamble-pays"
+      },
+      {
+        "lap": 15,
+        "type": "PIT_CYCLE_GAIN",
+        "driver": "Lando Norris",
+        "title": "Norris undercuts Leclerc",
+        "description": "Norris moved ahead of Leclerc after their first stops.",
+        "source_url": "https://www.fia.com/news/f1-leclerc-wins-ahead-mclaren-duo-ferraris-one-stop-monza-gamble-pays"
+      },
+      {
+        "lap": 39,
+        "type": "STRATEGY",
+        "driver": "Charles Leclerc",
+        "title": "One stop versus two",
+        "description": "Ferrari kept Leclerc on one stop while the McLarens stopped twice.",
+        "source_url": "https://www.fia.com/news/f1-leclerc-wins-ahead-mclaren-duo-ferraris-one-stop-monza-gamble-pays"
+      },
+      {
+        "lap": 45,
+        "type": "ON_TRACK_OVERTAKE",
+        "driver": "Oscar Piastri",
+        "title": "Piastri passes Sainz",
+        "description": "Piastri passed Sainz for second.",
+        "source_url": "https://www.fia.com/news/f1-leclerc-wins-ahead-mclaren-duo-ferraris-one-stop-monza-gamble-pays"
+      },
+      {
+        "lap": 53,
+        "type": "FINISH",
+        "driver": "Charles Leclerc",
+        "title": "Leclerc wins",
+        "description": "Leclerc finished ahead of Piastri and Norris.",
+        "source_url": "https://www.fia.com/news/f1-leclerc-wins-ahead-mclaren-duo-ferraris-one-stop-monza-gamble-pays"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FIA race report",
+        "url": "https://www.fia.com/news/f1-leclerc-wins-ahead-mclaren-duo-ferraris-one-stop-monza-gamble-pays",
+        "scope": "Podium and concise selected race-event annotations, paraphrased; not an exhaustive timeline"
+      },
+      {
+        "label": "FastF1 session timing",
+        "url": "https://docs.fastf1.dev/",
+        "scope": "Official timing feed via FastF1: classified podium, grid and lap/stint grouping; retrieved 2026-10-12"
+      }
+    ],
+    "incomplete": true
+  },
+  "monaco_2024": {
+    "race_id": "monaco_2024",
+    "name": "2024 Monaco Grand Prix",
+    "circuit": "Circuit de Monaco",
+    "country": "Monaco",
+    "date": "2024-05-26",
+    "laps": 78,
+    "winner": {
+      "driver": "Charles Leclerc",
+      "team": "Ferrari",
+      "grid": 1
+    },
+    "podium": [
+      {
+        "pos": 1,
+        "driver": "Charles Leclerc",
+        "team": "Ferrari",
+        "grid": 1,
+        "points": 25.0,
+        "gap": "WINNER"
+      },
+      {
+        "pos": 2,
+        "driver": "Oscar Piastri",
+        "team": "McLaren",
+        "grid": 2,
+        "points": 18.0,
+        "gap": "+00:00:07.152000"
+      },
+      {
+        "pos": 3,
+        "driver": "Carlos Sainz",
+        "team": "Ferrari",
+        "grid": 3,
+        "points": 15.0,
+        "gap": "+00:00:07.585000"
+      }
+    ],
+    "strategy_stints": [
+      {
+        "driver": "Charles Leclerc",
+        "stints": [
+          "MEDIUM (laps 1–1)",
+          "HARD (laps 2–78)"
+        ]
+      },
+      {
+        "driver": "Oscar Piastri",
+        "stints": [
+          "MEDIUM (laps 1–1)",
+          "HARD (laps 2–78)"
+        ]
+      },
+      {
+        "driver": "Carlos Sainz",
+        "stints": [
+          "MEDIUM (laps 1–1)",
+          "HARD (laps 2–78)"
+        ]
+      }
+    ],
+    "key_timeline": [
+      {
+        "lap": 1,
+        "type": "FLAG",
+        "driver": "Field",
+        "title": "Opening-lap red flag",
+        "description": "The race stopped after the Perez and Haas collision.",
+        "source_url": "https://www.fia.com/news/f1-leclerc-takes-emotional-home-win-monaco-ahead-piastri-and-sainz"
+      },
+      {
+        "lap": 1,
+        "type": "STRATEGY",
+        "driver": "Field",
+        "title": "Tyre change during stoppage",
+        "description": "The leading cars changed compounds during the red flag.",
+        "source_url": "https://www.fia.com/news/f1-leclerc-takes-emotional-home-win-monaco-ahead-piastri-and-sainz"
+      },
+      {
+        "lap": 2,
+        "type": "START",
+        "driver": "Charles Leclerc",
+        "title": "Standing restart",
+        "description": "Leclerc led the standing restart.",
+        "source_url": "https://www.fia.com/news/f1-leclerc-takes-emotional-home-win-monaco-ahead-piastri-and-sainz"
+      },
+      {
+        "lap": 51,
+        "type": "PIT_STOP",
+        "driver": "Lewis Hamilton",
+        "title": "Hamilton changes tyres",
+        "description": "Hamilton stopped and retained seventh place.",
+        "source_url": "https://www.fia.com/news/f1-leclerc-takes-emotional-home-win-monaco-ahead-piastri-and-sainz"
+      },
+      {
+        "lap": 78,
+        "type": "FINISH",
+        "driver": "Charles Leclerc",
+        "title": "Leclerc wins",
+        "description": "Leclerc finished ahead of Piastri and Sainz.",
+        "source_url": "https://www.fia.com/news/f1-leclerc-takes-emotional-home-win-monaco-ahead-piastri-and-sainz"
+      }
+    ],
+    "sources": [
+      {
+        "label": "FIA race report",
+        "url": "https://www.fia.com/news/f1-leclerc-takes-emotional-home-win-monaco-ahead-piastri-and-sainz",
+        "scope": "Podium and concise selected race-event annotations, paraphrased; not an exhaustive timeline"
+      },
+      {
+        "label": "FastF1 session timing",
+        "url": "https://docs.fastf1.dev/",
+        "scope": "Official timing feed via FastF1: classified podium, grid and lap/stint grouping; retrieved 2026-10-12"
+      }
+    ],
+    "incomplete": true
+  }
+}

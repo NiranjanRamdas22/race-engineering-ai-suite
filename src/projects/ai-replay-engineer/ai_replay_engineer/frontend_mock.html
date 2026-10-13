@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Race Engineer Replay</title>
+    <style>
+        body { font-family: sans-serif; background: #1a1a1a; color: white; padding: 20px; }
+        #log { height: 300px; overflow-y: scroll; background: #000; border: 1px solid #444; padding: 10px; font-family: monospace; }
+        .alert { color: #ff4444; }
+        .coaching { color: #44ff44; font-style: italic; }
+    </style>
+</head>
+<body>
+    <h1>🏎️ AI Race Engineer Replay</h1>
+    <div id="controls">
+        <button onclick="startSimulation()">Start Replay</button>
+        <button onclick="stopSimulation()">Stop</button>
+    </div>
+    <p>Telemetry Stream:</p>
+    <div id="log"></div>
+
+    <script>
+        let socket = new WebSocket("ws://localhost:8001/ws/telemetry");
+        let interval;
+
+        socket.onmessage = function(event) {
+            const msg = JSON.parse(event.data);
+            const log = document.getElementById('log');
+            if (msg.type === 'ALERT') {
+                msg.data.forEach(a => {
+                    log.innerHTML += '<div class="alert">[ALERT] ' + a.msg + '</div>';
+                });
+            } else if (msg.type === 'COACHING') {
+                log.innerHTML += '<div class="coaching">[ENGINEER] ' + msg.text + '</div>';
+            }
+            log.scrollTop = log.scrollHeight;
+        };
+
+        function startSimulation() {
+            let dist = 0;
+            interval = setInterval(() => {
+                dist += 10;
+                const sample = {
+                    "timestamp": Date.now(),
+                    "distance": dist,
+                    "speed": 150 + Math.random() * 50,
+                    "throttle": Math.random(),
+                    "brake": Math.random() > 0.8 ? 1.0 : 0.0
+                };
+                socket.send(JSON.stringify(sample));
+            }, 500);
+        }
+
+        function stopSimulation() {
+            clearInterval(interval);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "active-aero-2026",
+    "title": "2026 active aerodynamics",
+    "category": "aerodynamics",
+    "keywords": [
+      "active aero",
+      "active aerodynamics",
+      "front wing",
+      "rear wing",
+      "straight mode",
+      "corner mode"
+    ],
+    "section": "C3.10.10 and C3.11",
+    "text": "The front wing adjuster uses fixed Corner Mode and Straight Mode positions under FIA ECU control. Activation and geometry are constrained by the technical and sporting regulations. See the linked issue for exact conditions.",
+    "source_url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_19_-_2026-06-25.pdf",
+    "issue_date": "2026-06-25",
+    "issue": "19",
+    "season": 2026,
+    "retrieved_at": "2026-10-12T12:29:06.869059+00:00",
+    "verified": true
+  },
+  {
+    "id": "power-unit-2026",
+    "title": "2026 power unit energy flow",
+    "category": "power unit",
+    "keywords": [
+      "power unit",
+      "mgu-k",
+      "ers",
+      "engine",
+      "hybrid"
+    ],
+    "section": "C5.2.1 and C5.2.7\u20138",
+    "text": "Propulsion and energy recharge are limited to the specified engine and ERS-K. Absolute ERS-K electrical DC power is capped at 350 kW. Propulsive power also has speed-dependent limits and sporting activation conditions; 350 kW is not available without restriction.",
+    "source_url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_19_-_2026-06-25.pdf",
+    "issue_date": "2026-06-25",
+    "issue": "19",
+    "season": 2026,
+    "retrieved_at": "2026-10-12T12:29:06.869059+00:00",
+    "verified": true
+  },
+  {
+    "id": "tyre-dimensions-2026",
+    "title": "2026 technical tyre requirements",
+    "category": "tyres",
+    "keywords": [
+      "tyre dimensions",
+      "tire dimensions",
+      "wheel rims"
+    ],
+    "section": "C10.7\u2013C10.10",
+    "text": "Technical wheel and tyre requirements are specified in C10.7\u2013C10.10. These sections govern wheel rims, tyre requirements, retention and dimensions; sporting compound-use obligations belong to Section B.",
+    "source_url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_19_-_2026-06-25.pdf",
+    "issue_date": "2026-06-25",
+    "issue": "19",
+    "season": 2026,
+    "retrieved_at": "2026-10-12T12:29:06.869059+00:00",
+    "verified": true
+  },
+  {
+    "id": "sporting-tyres-2026",
+    "title": "2026 sporting tyre limitations",
+    "category": "tyres",
+    "keywords": [
+      "tyre",
+      "tire",
+      "compound",
+      "dry race",
+      "wet race",
+      "pit stop"
+    ],
+    "section": "B6.3.6\u20137",
+    "text": "Unless intermediate or wet-weather tyres are used during the race, drivers must use at least two different dry-weather specifications, including a mandatory race specification. Failure normally causes disqualification; an unrestartable suspended race has a time-penalty provision. Starting or resuming behind the safety car can require wet-weather tyres. See B6.3.6\u20137 for exceptions.",
+    "source_url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_08_-_2026-08-05_7.pdf",
+    "issue_date": "2026-08-05",
+    "issue": "08",
+    "season": 2026,
+    "retrieved_at": "2026-10-12T12:32:31.135950+00:00",
+    "verified": true
+  }
+]

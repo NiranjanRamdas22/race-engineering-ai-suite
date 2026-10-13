@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict');const fs=require('node:fs');
+const path='../projects/ai-replay-engineer/ai_replay_engineer/frontend/state.js';
+assert.ok(fs.existsSync(require('node:path').join(__dirname,path)),'Replay state reducer missing');
+const {ReplayState}=require(path);const s=new ReplayState();s.reset('first');
+s.consume({type:'FRAME_UPDATE',session_id:'first',seq:1,time_delta:2,speed_delta:-10,reference:{speed:180},alerts:[{msg:'Old'}]});
+s.consume({type:'COACHING',session_id:'first',seq:1,text:'Old radio'});s.reset('second');
+assert.equal(s.timeDelta,null);assert.equal(s.reference,null);assert.equal(s.radio.length,0);assert.equal(s.alerts.length,0);assert.equal(s.history.length,0);
+assert.equal(s.consume({type:'COACHING',session_id:'first',seq:2,text:'Late reply'}),false);
+console.log('Replay reset and stale-response checks passed');
+const {encodeConfiguration}=require(path);
+assert.throws(()=>encodeConfiguration({reference:'x'.repeat(15_000_001)}),/combined/);
+assert.equal(JSON.parse(encodeConfiguration({reference:'small'})).reference,'small');
